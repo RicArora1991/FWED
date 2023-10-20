@@ -1,0 +1,77 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    }
+    
+    /* .fa-star{
+        color: rgb(214, 214, 133);
+       box-shadow: 0 0 44px yellow;
+    } */
+    .light{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 1px solid black;
+        /* margin: 140px auto; */
+        /* background-color: rgb(230, 230, 97); */
+    }
+     .light::before{
+        content:'';
+        display: block;
+        width: 230px;
+        height: 260px;
+        background-color: #000;
+        position: absolute;
+        border-radius: 50%;
+        top: 140px;
+        left: 650px;
+    
+     }
+    .btn1{
+      padding: 20px;
+      border-radius:40px;
+      border: none;
+      background-color: darkgray;
+    }
+    .svgdata{
+        display: none;
+    }
+    .stardiv{
+        color: yellow;
+        -webkit-fill:red;
+       fill:red;
+        border-radius: 80%;
+        width: 9px;
+        height: 9px;
+        /* position: absolute; */
+        /* background-color: rgb(214, 214, 133); */
+        /* fill:rgb(214, 214, 133); */
+    }
+    .star {
+        width: 20px;
+        height: 20px;
+        /* background-color: white; */
+        /* border-radius: 50%; */
+        position: absolute;
+      }
+      
+      .glow {
+        animation: glow-animation 1s alternate infinite;
+      }
+      
+      @keyframes glow-animation {
+        0% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      
